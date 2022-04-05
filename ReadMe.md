@@ -50,7 +50,6 @@ All files    |      100 |      100 |      100 |      100 |                |
     should store a proposal in array, get initial VoteCount 0
     should store many proposals from different voters in array, get one by id
     should store many proposal from the same voter in array, get all by id
-***
 #### b) tests requires/revert et event
     should store a proposal in array, get event proposalRegistered
     should not store a proposal when registered by a non registered Voter, revert
@@ -63,7 +62,6 @@ All files    |      100 |      100 |      100 |      100 |                |
     should update votedProposalId in voters mapping, get votedProposalId 1
     should update voteCount in proposals array, get voteCount 1
     should increment voteCount in proposals array, get voteCount 2
-***
 #### b) tests requires/revert et event
     should not register vote when not at VotingSessionStarted stage, revert
     should not register vote from a non registered voter, revert
@@ -75,7 +73,6 @@ All files    |      100 |      100 |      100 |      100 |                |
 ***
 #### a) tests tallyVotes, get result
     should get the Id of the highest voteCount Proposal, Id 2
-***
 #### b) tests requires/revert et event
     should not tally votes when not at VotingSessionEnded stage, revert
     should not tally votes if not called by owner, revert
@@ -88,19 +85,16 @@ All files    |      100 |      100 |      100 |      100 |                |
     should not start Proposals Registering if not called at Registering Voters stage, revert
     should start Proposals Registering when called by owner
     should emit event when start Proposals Registering
-***
 #### b) tests endProposalsRegistering
     should not end Proposals Registering if not called by owner, revert
     should not end Proposals Registering if not called at Registering Proposals stage, revert
     should end Proposals Registering when called by owner
     should emit event when start Proposal Registering
-***
 #### c) tests startVotingSession
     should not startVotingSession if not called by owner, revert
     should not startVotingSession if not called at ProposalsRegistrationEnded stage, revert
     should startVotingSession when called by owner
     should emit event when startVotingSession
-***
 #### d) tests endVotingSession
     should not endVotingSession if not called by owner, revert
     should not endVotingSession if not called at VotingSessionStarted stage, revert
