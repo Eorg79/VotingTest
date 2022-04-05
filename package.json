@@ -1,0 +1,27 @@
+{
+  "name": "cicd",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "@openzeppelin/contracts": "^4.5.0",
+    "@openzeppelin/test-helpers": "^0.5.15",
+    "chai": "^4.3.6",
+    "eth-gas-reporter": "^0.2.24",
+    "solidity-coverage": "^0.7.20",
+    "truffle": "^5.4.29"
+  },
+  "scripts": {
+    "migrate": "truffle migrate",
+    "test": "truffle test",
+    "coverage": "truffle run coverage"
+  },
+  "description": "## Unit tests 44 tests valides",
+  "directories": {
+    "test": "test"
+  },
+  "devDependencies": {
+    "mocha": "^7.2.0"
+  },
+  "author": ""
+}
